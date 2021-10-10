@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CleanIsImportant</string>
+    <string name="longStr">
+        Клининг никогда не был таким доступным.
+        \n
+        Вы можете заказывать уборку несколько раз в месяц</string>
+</resources>
