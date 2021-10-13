@@ -12,6 +12,7 @@ class ApartmentActivity : AppCompatActivity() {
         setContentView(R.layout.activity_apartment)
 
 
+
         var tab = findViewById(R.id.tab) as ImageButton
         tab.setOnClickListener {
             val intent = Intent(this, ZacazActivity::class.java)
@@ -32,6 +33,12 @@ class ApartmentActivity : AppCompatActivity() {
         btnone.setOnClickListener {
             btnone.setImageResource(id2);
             btnthree.setVisibility(View.VISIBLE)
+
+
+            btnthree.setOnClickListener {
+                val intent = Intent(this, ScrollActivity::class.java)
+                startActivity(intent);
+            }
         }
 
 

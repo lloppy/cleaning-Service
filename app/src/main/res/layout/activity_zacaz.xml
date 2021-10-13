@@ -46,6 +46,7 @@
         android:src="@drawable/ic_frame_zacaz"
         app:layout_constraintBottom_toTopOf="@+id/frame"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="15dp"
         android:layout_marginBottom="50dp"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />

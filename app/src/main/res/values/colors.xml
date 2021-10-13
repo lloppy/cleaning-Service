@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="blue">#3656F9</color>
+    <color name="bluelight">#F8F8FF</color>
 
 </resources>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ScrollActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+
+
+        <HorizontalScrollView
+            android:id="@+id/scrollHoriz"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rot">
+
+
+            <ImageView
+                android:id="@+id/horiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:src="@drawable/scroll" />
+
+
+        </HorizontalScrollView>
+
+
+        <ImageView
+            android:id="@+id/pet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_frame_pet"
+            app:layout_constraintBottom_toTopOf="@+id/plash"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/scrollHoriz" />
+
+        <ImageView
+            android:id="@+id/standart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:background="@color/bluelight"
+            android:src="@drawable/ic_frame_standart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            style="@style/some_id"
+            android:gravity="left"
+            android:text="Кухня"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header_title" />
+
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Дополнительные услуги"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/standart" />
+
+
+        <ImageButton
+            android:id="@+id/plita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:background="@color/white"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_frame_plita"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text" />
+
+        <TextView
+            android:id="@+id/rot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            style="@style/some_id"
+            android:gravity="left"
+            android:text="Санузел"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/himch" />
+
+        <TextView
+            android:id="@+id/rot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:text="Работы с питомцами"
+            style="@style/some_id"
+            app:layout_constraintBottom_toTopOf="@+id/pet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollHoriz" />
+
+
+
+
+        <ImageButton
+            android:id="@+id/microvoln"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="21dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_frame_microvoln"
+            app:layout_constraintBottom_toTopOf="@+id/himch"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <ImageButton
+            android:id="@+id/plash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_frame_plash"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/himch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_frame_himch"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plita" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tshirt"
+            android:layout_marginLeft="200dp"
+            app:layout_constraintBottom_toBottomOf="@+id/himch"
+            app:layout_constraintEnd_toEndOf="@+id/himch"
+            app:layout_constraintStart_toStartOf="@+id/himch"
+            app:layout_constraintTop_toTopOf="@+id/himch" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tshirt"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="220dp"
+            app:layout_constraintBottom_toBottomOf="@+id/pet"
+            app:layout_constraintEnd_toEndOf="@+id/pet"
+            app:layout_constraintStart_toStartOf="@+id/pet"
+            app:layout_constraintTop_toTopOf="@+id/pet" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dog1"
+            android:layout_marginLeft="150dp"
+            android:layout_marginBottom="350dp"
+            app:layout_constraintBottom_toBottomOf="@+id/pet"
+            app:layout_constraintEnd_toEndOf="@+id/pet"
+            app:layout_constraintStart_toStartOf="@+id/pet"
+            app:layout_constraintTop_toTopOf="@+id/pet" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dog2"
+            android:layout_marginRight="250dp"
+            android:layout_marginBottom="350dp"
+            app:layout_constraintBottom_toBottomOf="@+id/pet"
+            app:layout_constraintEnd_toEndOf="@+id/pet"
+            app:layout_constraintStart_toStartOf="@+id/pet"
+            app:layout_constraintTop_toTopOf="@+id/pet" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

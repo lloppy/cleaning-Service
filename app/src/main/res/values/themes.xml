@@ -21,4 +21,23 @@
 
     </style>
 
+
+
+    <style name="some_id">
+
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="fontFamily">
+            @font/montserrat_bold
+        </item>
+
+
+        <item name="android:textColor">
+            #FF000000
+        </item>
+
+    </style>
+
 </resources>
