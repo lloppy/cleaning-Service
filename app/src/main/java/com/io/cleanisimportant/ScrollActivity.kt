@@ -21,7 +21,11 @@ class ScrollActivity : AppCompatActivity() {
 
         var plash = findViewById(R.id.plash) as ImageButton
         val id1 = resources.getIdentifier(R.drawable.ic_frame_14.toString(), null, null)
+        plash.setOnClickListener {
+            val intent = Intent(this, RegistrActivity::class.java)
+            startActivity(intent);
 
+        }
 
         val id2 = resources.getIdentifier(R.drawable.ic_frame_plita2.toString(), null, null)
         var plita = findViewById(R.id.plita) as ImageButton

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yoburg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <ImageView
+            android:id="@+id/zacaz"
+            android:layout_marginTop="-20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:src="@drawable/ic_frame_zacaz2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/adress"
+            android:gravity="left"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/street"
+            android:gravity="left"
+            android:layout_marginLeft="110dp"
+            android:textColor="@color/grey"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/adressView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Адрес "
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        style="@style/some_id"/>
+
+    <TextView
+        android:id="@+id/adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/adress"
+        />
+
+    <TextView
+        android:id="@+id/street"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/street"
+        />
+
+
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_frame_dopp"/>
+    </ScrollView>
+
+</LinearLayout>

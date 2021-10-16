@@ -10,5 +10,6 @@
 
     <color name="blue">#3656F9</color>
     <color name="bluelight">#F8F8FF</color>
+    <color name="grey">#A4A8BC</color>
 
 </resources>

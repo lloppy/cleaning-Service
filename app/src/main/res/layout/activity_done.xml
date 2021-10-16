@@ -4,28 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ZacazActivity">
+    tools:context=".DoneActivity">
 
 
     <ImageView
-        android:id="@+id/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end|top"
-        android:src="@drawable/ic_frame_header"
+        android:src="@drawable/ic_dne_zacaz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/uncle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|top"
-        android:src="@drawable/ic_frame_all"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -70,19 +58,5 @@
             android:src="@drawable/ic_help"/>
 
     </LinearLayout>
-
-    <ImageButton
-        android:id="@+id/tab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:backgroundTint="@color/white"
-        android:src="@drawable/ic_frame_zacaz"
-        android:layout_marginBottom="90dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
